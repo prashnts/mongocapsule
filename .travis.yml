@@ -1,0 +1,13 @@
+language: python
+python:
+  - '2.7'
+  - '3.3'
+  - '3.4'
+  - '3.5'
+script:
+  - python -m unittest discover
+notifications:
+  email:
+    recipients: prashant@ducic.ac.in
+    on_success: change
+    on_failure: change
