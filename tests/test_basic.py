@@ -49,5 +49,3 @@ class TestCapsule:
     self.Doc.objects.set_page_limit(20)
 
     assert self.Doc.objects.page_count == 5
-
-
