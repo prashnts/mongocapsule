@@ -3,3 +3,4 @@ mongomock>=3.4.0
 nose>=1.3.7
 rednose>=1.2.1
 coverage>=4.1
+codeclimate-test-reporter>=0.1.2

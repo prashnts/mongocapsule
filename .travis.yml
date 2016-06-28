@@ -6,11 +6,9 @@ python:
   - '3.5'
 script:
   - nosetests --with-coverage
+  - codeclimate-test-reporter
 notifications:
   email:
     recipients: prashant@ducic.ac.in
     on_success: change
     on_failure: change
-addons:
-  code_climate:
-    repo_token: 246401cd3196d14fa48c9a1554ac430a489dfc2bdc44926cb347b763f86b0ed7
