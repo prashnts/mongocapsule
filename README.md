@@ -1,9 +1,13 @@
 # MongoCapsule
 
 [![Build Status](https://img.shields.io/travis/prashnts/mongocapsule/master.svg)](https://travis-ci.org/prashnts/mongocapsule)
+
 [![Code Climate](https://img.shields.io/codeclimate/github/prashnts/mongocapsule.svg)](https://codeclimate.com/github/prashnts/mongocapsule)
+
 [![Test Coverage](https://img.shields.io/codeclimate/coverage/github/prashnts/mongocapsule.svg)](https://codeclimate.com/github/prashnts/mongocapsule)
+
 [![PyPI](https://img.shields.io/pypi/pyversions/mongocapsule.svg?maxAge=2592000)](https://pypi.python.org/pypi/mongocapsule)
+
 [![PyPI](https://img.shields.io/pypi/v/mongocapsule.svg?maxAge=2592000)](https://pypi.python.org/pypi/mongocapsule)
 
 ## Overview

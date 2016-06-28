@@ -1,11 +1,15 @@
 MongoCapsule
 ============
 
-| |Build Status|
-| |Code Climate|
-| |Test Coverage|
-| |PyPI|
-| |PyPI|
+|Build Status|
+
+|Code Climate|
+
+|Test Coverage|
+
+|PyPI|
+
+|PyPI|
 
 Overview
 --------
