@@ -5,7 +5,8 @@ import mongoengine
 class QuerySet(mongoengine.QuerySet):
   LIMIT = 10
 
-  def set_page_limit(self, value):
+  @staticmethod
+  def set_page_limit(value):
     QuerySet.LIMIT = value
 
   def page(self, page=1):

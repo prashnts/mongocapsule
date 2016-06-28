@@ -46,6 +46,26 @@ class TestCapsule:
 
     assert self.Doc.objects.page_count == 10
 
-    self.Doc.objects.set_page_limit(20)
+    self.db.QuerySet.set_page_limit(20)
 
     assert self.Doc.objects.page_count == 5
+
+
+def test_multiple():
+  db1 = MongoCapsule('test', host='mongomock://localhost')
+  db2 = MongoCapsule('test2', host='mongomock://localhost')
+
+  class Doc1(db1.Document):
+    val = db1.StringField()
+
+  class Doc2(db2.Document):
+    val = db2.StringField()
+
+  o1 = Doc1(val="db1")
+  o1.save()
+
+  o2 = Doc2(val="db2")
+  o2.save()
+
+  assert Doc1.objects.get().val == 'db1'
+  assert Doc2.objects.get().val == 'db2'

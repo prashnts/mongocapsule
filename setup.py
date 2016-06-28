@@ -2,12 +2,12 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
   long_description = f.read()
 
 
