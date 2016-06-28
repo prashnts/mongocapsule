@@ -1,13 +1,11 @@
 MongoCapsule
 ===============================
 
-version number: 0.0.1
-author: Prashant Sinha
 
 Overview
 --------
+Encapsulated MongoEngine.
 
-Encapsulated MongoEngine .
 
 Installation / Usage
 --------------------
@@ -21,7 +19,8 @@ Or clone the repo:
 
     $ git clone https://github.com/prashnts/mongocapsule.git
     $ python setup.py install
-    
+
+
 Contributing
 ------------
 

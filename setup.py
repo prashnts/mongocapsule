@@ -10,12 +10,10 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
   long_description = f.read()
 
-# get the dependencies and installs
-with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
-  all_reqs = f.read().split('\n')
 
-install_requires = [x.strip() for x in all_reqs if 'git+' not in x]
-dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' not in x]
+install_requires = ['mongoengine>=0.8.0']
+test_requirements = ['nose', 'rednose', 'coverage', 'mongomock']
+
 
 setup(
   name='mongocapsule',
@@ -27,14 +25,26 @@ setup(
   license='MIT',
   classifiers=[
     'Development Status :: 3 - Alpha',
+    'Environment :: Web Environment',
     'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2',
+    'Programming Language :: Python :: 2.6',
+    'Programming Language :: Python :: 2.7',
     'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.2',
+    'Programming Language :: Python :: 3.3',
+    'Programming Language :: Python :: 3.4',
+    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+    'Topic :: Software Development :: Libraries :: Python Modules'
   ],
   keywords='',
-  packages=find_packages(exclude=['docs', 'tests*']),
+  packages=['mongocapsule'],
   include_package_data=True,
   author='Prashant Sinha',
   install_requires=install_requires,
-  dependency_links=dependency_links,
+  tests_require=test_requirements,
   author_email='prashant@ducic.ac.in'
 )

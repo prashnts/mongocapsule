@@ -5,7 +5,7 @@ python:
   - '3.4'
   - '3.5'
 script:
-  - python -m unittest discover
+  - nosetests --with-coverage
 notifications:
   email:
     recipients: prashant@ducic.ac.in
